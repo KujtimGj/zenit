@@ -17,10 +17,10 @@ const Footer = () => {
           {/* Column 1: Logo & About */}
           <div className="md:col-span-2">
             <a href="/" className="text-2xl font-playfair font-bold inline-block mb-4">
-              <span className="text-bekatown-primary">Bekatown</span> Residence
+              <span className="text-bekatown-primary">Zenit</span> Invest
             </a>
             <p className="text-gray-300 mb-6 max-w-md">
-              Bekatown Residence & Spa Resort offers premium living spaces that combine modern design with timeless elegance. Experience luxury living in the heart of Gjilan.
+              Zenit Invest Residence & Spa Resort offers premium living spaces that combine modern design with timeless elegance. Experience luxury living in the heart of Gjilan.
             </p>
             <div className="flex space-x-4">
               <a
@@ -45,7 +45,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:info@bekatown.com"
+                href="mailto:info@zenitinvest.com"
                 className="bg-white/10 hover:bg-bekatown-primary hover:text-white p-2 rounded-full transition-colors duration-300"
                 aria-label="Email"
               >
@@ -99,8 +99,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@bekatown.com" className="text-gray-300 hover:text-bekatown-primary transition-colors duration-300">
-                  info@bekatown.com
+                <a href="mailto:info@zenitinvest.com" className="text-gray-300 hover:text-bekatown-primary transition-colors duration-300">
+                  info@zenitinvest.com
                 </a>
               </li>
             </ul>
@@ -119,7 +119,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Bekatown Residence & Spa Resort. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Zenit Invest Residence & Spa Resort. All rights reserved.</p>
         </div>
       </div>
     </footer>

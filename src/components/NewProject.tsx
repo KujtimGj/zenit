@@ -36,7 +36,7 @@ const NewProject = () => {
             </div>
 
             <p className="text-lg text-gray-700">
-              Bekatown proudly presents its 8th residential project, combining modern architecture with timeless elegance. This premium development offers an unparalleled living experience in the heart of Gjilan.
+              Zenit Invest proudly presents its 8th residential project, combining modern architecture with timeless elegance. This premium development offers an unparalleled living experience in the heart of Gjilan.
             </p>
 
             <div className="space-y-4 py-4">

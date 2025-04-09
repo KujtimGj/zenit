@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   useEffect(() => {
     // Update document title
-    document.title = "Bekatown - Residence & Spa Resort";
+    document.title = "Zenit Invest - Residence & Spa Resort";
   }, []);
 
   return (
