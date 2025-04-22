@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -43,31 +42,28 @@ const Navbar = () => {
               href="#about"
               className="hover:text-bekatown-primary transition-colors duration-300"
             >
-              About
+              Rreth nesh
             </a>
             <a
               href="#apartments"
               className="hover:text-bekatown-primary transition-colors duration-300"
             >
-              Apartments
+              Apartamentet
             </a>
             <a
               href="#gallery"
               className="hover:text-bekatown-primary transition-colors duration-300"
             >
-              Gallery
+              Galeria
             </a>
             <a
               href="#location"
               className="hover:text-bekatown-primary transition-colors duration-300"
             >
-              Location
+              Lokacioni
             </a>
-            <a
-              href="#contact"
-              className="btn-primary"
-            >
-              Contact
+            <a href="#contact" className="btn-primary">
+              Kontakti
             </a>
           </div>
 
@@ -77,11 +73,7 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-bekatown-text hover:text-bekatown-primary"
             >
-              {isMobileMenuOpen ? (
-                <X size={24} />
-              ) : (
-                <Menu size={24} />
-              )}
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
@@ -96,35 +88,35 @@ const Navbar = () => {
               className="block px-3 py-2 hover:bg-bekatown-light hover:text-bekatown-primary rounded-md"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About
+              Rreth nesh
             </a>
             <a
               href="#apartments"
               className="block px-3 py-2 hover:bg-bekatown-light hover:text-bekatown-primary rounded-md"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Apartments
+              Apartamentet
             </a>
             <a
               href="#gallery"
               className="block px-3 py-2 hover:bg-bekatown-light hover:text-bekatown-primary rounded-md"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Gallery
+              Galeria
             </a>
             <a
               href="#location"
               className="block px-3 py-2 hover:bg-bekatown-light hover:text-bekatown-primary rounded-md"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Location
+              Lokacioni
             </a>
             <a
               href="#contact"
               className="block px-3 py-2 bg-bekatown-primary text-white rounded-md"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Contact
+              Kontakti
             </a>
           </div>
         </div>
