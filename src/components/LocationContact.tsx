@@ -73,7 +73,7 @@ const LocationContact = () => {
                   </div>
                   <div className="ml-4">
                     <h5 className="font-medium">Emaili</h5>
-                    <p className="text-gray-700">info@zenit-invest.com</p>
+                    <p className="text-gray-700">zenit.invest@outlook.com</p>
                   </div>
                 </div>
               </div>

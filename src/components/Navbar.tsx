@@ -31,34 +31,38 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="/" className="text-2xl font-playfair font-bold">
-              <span className="text-bekatown-primary">Zenit</span> Invest
+            <a href="/" className="text-3xl font-playfair font-bold">
+              <span className="text-bekatown-primary">Zenit</span> <span style={{color:isScrolled?'black':'white'}}>Invest</span>
             </a>
           </div>
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
             <a
-              href="#about"
+              href="#upcoming-building"
               className="hover:text-bekatown-primary transition-colors duration-300"
+              style={{ color: isScrolled?'black' :"white" }}
             >
-              Rreth nesh
+              Objekti i ri
             </a>
             <a
               href="#apartments"
               className="hover:text-bekatown-primary transition-colors duration-300"
+              style={{ color: isScrolled?'black' :"white" }}  
             >
               Apartamentet
             </a>
             <a
               href="#gallery"
               className="hover:text-bekatown-primary transition-colors duration-300"
+              style={{ color: isScrolled?'black' :"white" }}
             >
               Galeria
             </a>
             <a
               href="#location"
               className="hover:text-bekatown-primary transition-colors duration-300"
+              style={{ color: isScrolled?'black' :"white" }}
             >
               Lokacioni
             </a>

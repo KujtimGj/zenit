@@ -20,7 +20,7 @@ const ApartmentTypes = () => {
     {
       id: "standard",
       name: "Standard",
-      size: "92m²",
+      size: "100.4m²",
       rooms: "3 dhoma",
       image: StandardApartment,
       description:
@@ -34,7 +34,7 @@ const ApartmentTypes = () => {
       rooms: "4 dhoma",
       image: ComfortApartment,
       description:
-        "Ofron më shumë hapësirë ​​për rehati të shtuar, perfekt për ata që kërkojnë një mjedis më të gjerë dhe të ndriçuar natyralisht.",
+        "Ofron më shumë hapësirë për rehati të shtuar, perfekt për ata që kërkojnë një mjedis më të gjerë dhe të ndriçuar natyralisht.",
       features: ["4 dhoma", "3 banjo", "1 balkon", "Izolim termik"],
     },
     {
@@ -56,14 +56,14 @@ const ApartmentTypes = () => {
     apartments.find((apt) => apt.id === activeTab) || apartments[0];
 
   return (
-    <section id="apartments" className="bg-bekatown-gray py-16 md:py-24">
+    <section id="apartments" className="bg-bekatown-gray py-10 md:py-15">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-sm uppercase tracking-widest text-bekatown-primary font-medium mb-2">
             Zbulo më shumë
           </h2>
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">
-            Llojët e apartamenteve
+          <h3 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Llojët e apartamenteve - Objekti 7
           </h3>
           <div className="w-16 h-1 bg-bekatown-primary mx-auto mb-6"></div>
           <p className="text-lg text-gray-700">

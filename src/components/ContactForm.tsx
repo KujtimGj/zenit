@@ -32,14 +32,33 @@ const ContactForm = () => {
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
 
+    const userMessage = `Përshëndetje Zenit Invest,%0A%0AJam%20i%20interesuar%20për%20këtë%20apartament.%20Ju%20lutem%20më%20kontaktoni%20me%20informacione%20më%20të%20hollësishme.%0A%0ADërguar%20nga%3A%0A%0AEmri%3A%20${encodeURIComponent(
+      formData.get("name") as string
+    )}%0AEmail%3A%20${encodeURIComponent(
+      formData.get("email") as string
+    )}%0ATelefon%3A%20${encodeURIComponent(
+      formData.get("phone") as string
+    )}%0ALloji%20i%20Apartamentit%3A%20${encodeURIComponent(
+      formData.get("apartmentType") as string
+    )}%0AMesazh%3A%20${encodeURIComponent(formData.get("message") as string)}`;
+
+    const phoneNumber = "41798333614";
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${userMessage}`;
+    window.location.href = whatsappURL;
+
     try {
       const res = await fetch("https://formspree.io/f/mvgklreb", {
         method: "POST",
         body: formData,
       });
 
+      if (!res.ok) {
+        throw new Error("Form submission failed");
+      }
+
       const result = await res.json();
       console.log(result);
+
       setFormData({
         name: "",
         email: "",
@@ -49,6 +68,8 @@ const ContactForm = () => {
       });
     } catch (error) {
       console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false); // Reset the submitting state regardless of the result
     }
   };
 
@@ -96,6 +117,7 @@ const ContactForm = () => {
             value={formData.phone}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-bekatown-primary/50"
+            required
           />
         </div>
       </div>
@@ -111,10 +133,19 @@ const ContactForm = () => {
           onChange={handleChange}
           className="w-full px-4 py-2 border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-bekatown-primary/50"
         >
-          <option value="standard">Apartament Standard (91.10m²)</option>
-          <option value="comfort">Apartament Komfort (113.80m²)</option>
-          <option value="premium">Apartament Premium (128.27m²)</option>
-          <option value="not-sure">Objektin e ri</option>
+          <optgroup label="Objekti i ri - 8">
+          <option value="presidencial">Presidencial (135.75m²)</option>
+            <option value="suita">Suita (135.95m²)</option>
+            <option value="eleganca">Eleganca (93.08m²)</option>
+            <option value="moderne">Moderne (88.97.08m²)</option>
+            <option value="klasike">Klasike (87.76m²)</option>
+            <option value="klasike">Komode (83.74m²)</option>
+          </optgroup>
+          <optgroup label="Objekti 7">
+            <option value="standard">Apartament Standard (91.10m²)</option>
+            <option value="comfort">Apartament Komfort (113.80m²)</option>
+            <option value="premium">Apartament Premium (128.27m²)</option>
+          </optgroup>
         </select>
       </div>
 
@@ -130,6 +161,7 @@ const ContactForm = () => {
           rows={4}
           className="w-full px-4 py-2 border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-bekatown-primary/50"
           placeholder="Na tregoni për kërkesat tuaja ose bëni pyetje..."
+          required
         ></textarea>
       </div>
 

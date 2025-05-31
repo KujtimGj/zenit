@@ -36,7 +36,7 @@ const VideoSection = () => {
 
   const videoUrl = "https://www.youtube.com/embed/-moU1Cjg0W0";
 
-  const images = [FirstImg, SecondImg, ThirdImg, FourthImg,img1, img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24];
+  const images = [FirstImg, SecondImg, ThirdImg, FourthImg,img1, img2,img3,img4,img5,img7,img8,img9,img6,img12,img13,img14,img15,img16,img17,img18,img19,img20];
 
   return (
     <section id="gallery" className="bg-white py-16 md:py-24">
