@@ -7,7 +7,7 @@ import ApartmentTypes from "@/components/ApartmentTypes";
 import VideoSection from "@/components/VideoSection";
 import LocationContact from "@/components/LocationContact";
 import Footer from "@/components/Footer";
-
+import AnnouncementBar from "@/components/ui/announcement";
 const Index = () => {
   useEffect(() => {
     // Update document title
@@ -16,6 +16,7 @@ const Index = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <AnnouncementBar />   
       <Navbar />
       <main className="flex-grow">
         <HeroSection />

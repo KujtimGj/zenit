@@ -13,6 +13,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
+  
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-img"
         style={{
